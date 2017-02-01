@@ -1,4 +1,4 @@
-package uk.gov.ida;
+package uk.gov.verify;
 
 import com.mashape.unirest.http.HttpResponse;
 import com.mashape.unirest.http.exceptions.UnirestException;

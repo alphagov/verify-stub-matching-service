@@ -1,4 +1,4 @@
-group 'gov.uk.verify'
+group 'uk.gov.ida'
 version '1.0-SNAPSHOT'
 
 apply plugin: 'java'
