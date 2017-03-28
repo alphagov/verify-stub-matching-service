@@ -3,13 +3,16 @@ package uk.gov.verify;
 import spark.Spark;
 
 import static java.lang.Integer.parseInt;
+import static java.lang.String.valueOf;
 import static java.lang.System.getenv;
 import static spark.Spark.post;
 
 public class LocalMatchingService {
 
+    public static final int DEFAULT_PORT = 50130;
+
     public static void main(String[] args) {
-        Spark.port(parseInt(getenv().getOrDefault("LMS_PORT", "50130")));
+        Spark.port(parseInt(getenv().getOrDefault("LMS_PORT", valueOf(DEFAULT_PORT))));
         addRoutes();
     }
 
