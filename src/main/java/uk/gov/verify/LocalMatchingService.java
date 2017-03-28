@@ -2,12 +2,14 @@ package uk.gov.verify;
 
 import spark.Spark;
 
+import static java.lang.Integer.parseInt;
+import static java.lang.System.getenv;
 import static spark.Spark.post;
 
 public class LocalMatchingService {
 
     public static void main(String[] args) {
-        Spark.port(50130);
+        Spark.port(parseInt(getenv().getOrDefault("LMS_PORT", "50130")));
         addRoutes();
     }
 
@@ -22,7 +24,7 @@ public class LocalMatchingService {
         });
     }
 
-    public static void shutdown(){
+    public static void shutdown() {
         Spark.stop();
     }
 }
