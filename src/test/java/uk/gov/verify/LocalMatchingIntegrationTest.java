@@ -26,7 +26,7 @@ public class LocalMatchingIntegrationTest {
     @Test
     public void shouldReturnMatchOnMatchingRequest() throws UnirestException {
         HttpResponse<String> stringHttpResponse = post(String.format(
-                "http://localhost:%d/stub-matching/matching-service/POST",
+                "http://localhost:%d/local-matching/match",
                 DEFAULT_PORT)
         ).asString();
 
@@ -36,7 +36,7 @@ public class LocalMatchingIntegrationTest {
     @Test
     public void shouldReturnSuccessOnUserCreationRequest() throws UnirestException {
         HttpResponse<String> stringHttpResponse = post(String.format(
-                "http://localhost:%d/stub-matching/unknown-user/POST",
+                "http://localhost:%d/local-matching/create-user",
                 DEFAULT_PORT)
         ).asString();
 

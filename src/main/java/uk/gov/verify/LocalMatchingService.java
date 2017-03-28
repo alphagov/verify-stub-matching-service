@@ -17,11 +17,11 @@ public class LocalMatchingService {
     }
 
     private static void addRoutes() {
-        post("/stub-matching/matching-service/POST", (req, res) -> {
+        post("/local-matching/match", (req, res) -> {
             res.type("application/json");
             return "{\"result\":\"match\"}";
         });
-        post("/stub-matching/unknown-user/POST", (req, res) -> {
+        post("/local-matching/create-user", (req, res) -> {
             res.type("application/json");
             return "{\"result\":\"success\"}";
         });
