@@ -1,5 +1,5 @@
 group 'uk.gov.ida'
-version '1.0.0'
+version "1.0.0-${System.env.BUILD_NUMBER ?: 'SNAPSHOT'}"
 
 apply plugin: 'java'
 
@@ -23,7 +23,6 @@ task fatJar(type: Jar) {
                 'Main-Class': 'uk.gov.verify.LocalMatchingService'
     }
     baseName = 'local-matching-service'
-    version = null
     from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
     with jar
 }
