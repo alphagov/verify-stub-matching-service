@@ -56,5 +56,5 @@ export LMS_PORT=1337
 java -jar local-matching-service-X.X.X-Y.jar
 ```
 
-If you  would like to run the locally build jar file you can use the above commands supplementing
+If you  would like to run the locally built jar file you can use the above commands supplementing
 'local-matching-service-X.X.X-Y.jar' with 'verify-stub-matching-service-X.X.X-SNAPSHOT.jar '
