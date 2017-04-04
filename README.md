@@ -51,7 +51,7 @@ If you want to start the stub local matching service on a different port you can
 environment variable. For example:
 
 ```
-# Start the service on the default port (1337)
+# Start the service on port (1337)
 export LMS_PORT=1337
 java -jar local-matching-service-X.X.X-Y.jar
 ```
