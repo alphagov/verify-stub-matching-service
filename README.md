@@ -22,23 +22,21 @@ from withing the project root directory:
 
 ```
 # Windows
-gradlew build
+gradlew build fatJar
 ```
 
 ```
 # Unix based OS
-./gradlew build
+./gradlew build fatJar
 ```
 
 Starting the stub local matching service
--------------------------------------
+----------------------------------------
 
-Building the project will produce a verify-stub-matching-service-X.X.X-SNAPSHOT.jar file where 'X.X.X' is the
-product version number.
+You can dowload a ready to use jar from [the releases page](https://github.com/alphagov/verify-stub-matching-service/releases).
 
-You can also dowload a ready to use jar from the project releases. Please note that the released jar fales
-are named as follow: local-matching-service-X.X.X-Y.jar where 'X.X.X' is the product version number and 'Y' is
-the build number.
+If you've built the project yourself the `fatJar` task will place a file called local-matching-service-X.X.X-Y.jar in `build/libs`
+(where 'X.X.X' is the version number).
 
 You can run the stub local matching service with:
 
