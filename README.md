@@ -8,8 +8,8 @@ It is a small http server which provides 2 methods. These methods return success
 
 The two urls are:
 
-* http://localhost:50130/stub-matching/matching-service/POST -> returns `{"result":"match"}`
-* http://localhost:50130/stub-matching/unknown-user/POST -> returns `{"result":"success"}`
+* POST http://localhost:50130/local-matching/match -> returns `{"result":"match"}`
+* POST http://localhost:50130/local-matching/create-user -> returns `{"result":"success"}`
 
 Please note that the default port is 50130, however this value can be changed by setting a
 port number value to an environment variable 'LMS_PORT'.
