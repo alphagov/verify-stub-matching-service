@@ -1,5 +1,5 @@
 group 'uk.gov.ida'
-version "1.0.0-${System.env.BUILD_NUMBER ?: 'SNAPSHOT'}"
+version "${System.env.BUILD_NUMBER ?: 'SNAPSHOT'}"
 
 apply plugin: 'java'
 
